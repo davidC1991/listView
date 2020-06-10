@@ -29,8 +29,30 @@ public class Areas extends AppCompatActivity {
         lvAreas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                tituloAreas.setText("la opcion escogida es" + lvAreas.getItemAtPosition(position));
-
+                if(lvAreas.getItemAtPosition(position).equals("CUADRADO")){
+                    Intent intent;
+                    intent= new Intent(Areas.this, cuadrado.class);
+                    startActivity(intent);
+                    finish();
+                }
+                if(lvAreas.getItemAtPosition(position).equals("TRIANGULO")){
+                    Intent intent;
+                    intent= new Intent(Areas.this, triangulo.class);
+                    startActivity(intent);
+                    finish();
+                }
+                if(lvAreas.getItemAtPosition(position).equals("RECTANGULO")){
+                    Intent intent;
+                    intent= new Intent(Areas.this, rectangulo.class);
+                    startActivity(intent);
+                    finish();
+                }
+                if(lvAreas.getItemAtPosition(position).equals("CIRCULO")){
+                    Intent intent;
+                    intent= new Intent(Areas.this, circulo.class);
+                    startActivity(intent);
+                    finish();
+                }
             }
         });
 

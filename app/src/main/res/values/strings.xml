@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">listView</string>
+    <string name="tituloCuadrado">CUADRADO</string>
+    <string name="tituloValorLado">Valor del lado:</string>
+    <string name="calcular">CALCULAR</string>
+    <string name="limpiar">LIMPIAR</string>
+    <string name="resultado">RESULTADO</string>
+    <string name="area">Area:</string>
+    <string name="ok">OK</string>
+    <string name="tituloTriangulo">TRIANGULO</string>
+    <string name="tituloRectangulo">RECTANGULO</string>
+    <string name="tituloCirculo">CIRCULO</string>
+    <string name="tituloValorAltura">Valor altura:</string>
+    <string name="tituloValorAlturaRectangulo">Valor altura</string>
+    <string name="tituloValorBaseRectangulo">Valor base:</string>
+    <string name="tituloValorRadio">Valor radio:</string>
 </resources>
