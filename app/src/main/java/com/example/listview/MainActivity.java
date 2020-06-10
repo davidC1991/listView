@@ -2,6 +2,7 @@ package com.example.listview;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -28,7 +29,25 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                titulo.setText("la opcion escogida es" + listView.getItemAtPosition(position));
+                
+                if(listView.getItemAtPosition(position).equals("AREAS")){
+                    Intent intent;
+                    intent= new Intent(MainActivity.this, Areas.class);
+                    startActivity(intent);
+                    finish();
+                }
+                if(listView.getItemAtPosition(position).equals("VOLUMENES")){
+                    Intent intent;
+                    intent= new Intent(MainActivity.this, volumenes.class);
+                    startActivity(intent);
+                    finish();
+                }
+                if(listView.getItemAtPosition(position).equals("OPERACIONES REALIZADAS")){
+                    Intent intent;
+                    intent= new Intent(MainActivity.this, realizadas.class);
+                    startActivity(intent);
+                    finish();
+                }
             }
         });
     }

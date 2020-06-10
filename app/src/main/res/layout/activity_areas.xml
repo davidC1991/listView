@@ -4,29 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" >
+    tools:context=".Areas">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/lblTituloListView"
+            android:id="@+id/lblTituloAreas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
             android:gravity="center_horizontal"
-            android:text="OPCIONES"
+            android:text="AREAS"
             android:textSize="24sp" />
 
+        <ListView
+            android:id="@+id/lvPantallaAreas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </LinearLayout>
-
-    <ListView
-        android:id="@+id/lvPantalla1"
-        android:layout_width="match_parent"
-        android:layout_height="689dp"
-        android:paddingTop="20dp"
-        app:layout_anchor="@+id/linearLayout"
-        app:layout_anchorGravity="center" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
