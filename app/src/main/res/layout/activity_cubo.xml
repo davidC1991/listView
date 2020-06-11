@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".circulo">
+    tools:context=".cubo">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -12,12 +12,12 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/lblTituloCirculo"
+            android:id="@+id/lblTituloCubo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:paddingTop="40dp"
-            android:text="@string/tituloCirculo"
+            android:text="@string/tituloCubo"
             android:textSize="24sp" />
 
         <LinearLayout
@@ -28,14 +28,14 @@
             android:paddingTop="20dp">
 
             <TextView
-                android:id="@+id/lblValorRadioCirculo"
+                android:id="@+id/lblValorCubo"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
-                android:text="@string/tituloValorRadio" />
+                android:text="@string/tituloValorLado" />
 
             <EditText
-                android:id="@+id/txtValorRadioCirculo"
+                android:id="@+id/txtValorLadoCubo"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
@@ -51,16 +51,17 @@
             android:paddingTop="20dp">
 
             <Button
-                android:id="@+id/btnCalcularCirculo"
+                android:id="@+id/btnCalcularCubo"
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0"
-                android:onClick="calcularCirculo"
+
+                android:onClick="calcularCubo"
                 android:text="@string/calcular" />
 
             <Button
-                android:id="@+id/btnBorrarCirculo"
+                android:id="@+id/btnBorrarCubo"
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
@@ -76,7 +77,7 @@
             android:paddingTop="30dp">
 
             <TextView
-                android:id="@+id/lblTituloResultadoCirculo"
+                android:id="@+id/lblTituloResultadoCubo"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:layout_weight="0"
@@ -95,14 +96,14 @@
                 android:paddingBottom="40dp">
 
                 <TextView
-                    android:id="@+id/lblAreaCirculo"
+                    android:id="@+id/lblVolumenCubo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0"
-                    android:text="@string/area" />
+                    android:text="Volumen:" />
 
                 <TextView
-                    android:id="@+id/lblAreaValorCirculo"
+                    android:id="@+id/lblVolumenCuboValor"
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0"
@@ -110,7 +111,7 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/btnOkCirculo"
+                android:id="@+id/btnOkCubo"
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"

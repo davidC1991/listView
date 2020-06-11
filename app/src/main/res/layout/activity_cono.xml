@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".circulo">
+    tools:context=".cono">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -12,12 +12,12 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/lblTituloCirculo"
+            android:id="@+id/lblTituloCono"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:paddingTop="40dp"
-            android:text="@string/tituloCirculo"
+            android:text="@string/tituloCono"
             android:textSize="24sp" />
 
         <LinearLayout
@@ -28,14 +28,36 @@
             android:paddingTop="20dp">
 
             <TextView
-                android:id="@+id/lblValorRadioCirculo"
+                android:id="@+id/lblValorRadioCono"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
-                android:text="@string/tituloValorRadio" />
+                android:text="@string/valor_radio_Cilindro" />
 
             <EditText
-                android:id="@+id/txtValorRadioCirculo"
+                android:id="@+id/txtValorRadioCono"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:inputType="number" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/lblValorAlturaCono"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="@string/tituloValorAlturaRectangulo" />
+
+            <EditText
+                android:id="@+id/txtValorAlturaCono"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
@@ -51,16 +73,17 @@
             android:paddingTop="20dp">
 
             <Button
-                android:id="@+id/btnCalcularCirculo"
+                android:id="@+id/btnCalcularCono"
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0"
-                android:onClick="calcularCirculo"
+
+                android:onClick="calcularCono"
                 android:text="@string/calcular" />
 
             <Button
-                android:id="@+id/btnBorrarCirculo"
+                android:id="@+id/btnBorrarCono"
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
@@ -76,7 +99,7 @@
             android:paddingTop="30dp">
 
             <TextView
-                android:id="@+id/lblTituloResultadoCirculo"
+                android:id="@+id/lblTituloResultadoCono"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:layout_weight="0"
@@ -95,14 +118,14 @@
                 android:paddingBottom="40dp">
 
                 <TextView
-                    android:id="@+id/lblAreaCirculo"
+                    android:id="@+id/lblAreaVolumenCono"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0"
-                    android:text="@string/area" />
+                    android:text="@string/volumenCono" />
 
                 <TextView
-                    android:id="@+id/lblAreaValorCirculo"
+                    android:id="@+id/lblAreaVolumenCono"
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0"
@@ -110,7 +133,7 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/btnOkCirculo"
+                android:id="@+id/btnOkCono"
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"

@@ -8,23 +8,25 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class circulo extends AppCompatActivity {
+public class cono extends AppCompatActivity {
     private EditText radio;
-    private TextView area;
-
+    private EditText altura;
+    private TextView volumen;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_circulo);
-        radio= findViewById(R.id.txtValorRadioCirculo);
-        area= findViewById(R.id.lblAreaValorCirculo);
+        setContentView(R.layout.activity_cono);
+        radio= findViewById(R.id.txtValorRadioCono);
+        altura= findViewById(R.id.txtValorAlturaCono);
+        volumen= findViewById(R.id.lblAreaVolumenCono);
     }
-    public void calcularCirculo(View v){
-        int r,ar;
+    public void calcularCono(View v){
+        int r,h,ar;
         if(validar1()) {
             r = Integer.parseInt(radio.getText().toString());
-            ar = (int) 3.14 * r * r;
-            area.setText("" + ar);
+            h = Integer.parseInt(altura.getText().toString());
+            ar = ((int) 3.14 * (r * r * h))/3;
+            volumen.setText("" + ar);
         }
     }
 
@@ -32,9 +34,14 @@ public class circulo extends AppCompatActivity {
         boolean vacio=true;
 
         String c1= radio.getText().toString();
+        String c2= altura.getText().toString();
 
         if(c1.isEmpty()){
             radio.setError("Ingrese el radio");
+            vacio=false;
+        }
+        if(c2.isEmpty()){
+            altura.setError("Ingrese la altura");
             vacio=false;
         }
 
@@ -43,7 +50,7 @@ public class circulo extends AppCompatActivity {
     }
     public void onBackPressed(){
         //  finish();
-        Intent i= new Intent(circulo.this,Areas.class);
+        Intent i= new Intent(cono.this,volumenes.class);
         startActivity(i);
     }
 }

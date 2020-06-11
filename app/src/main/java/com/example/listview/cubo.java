@@ -8,23 +8,24 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class cuadrado extends AppCompatActivity {
+public class cubo extends AppCompatActivity {
     private EditText lado;
-    private TextView area;
+    private TextView cubo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cuadrado);
-        lado= findViewById(R.id.txtValorLado);
-        area= findViewById(R.id.lblAreaCuadradoValor);
+        setContentView(R.layout.activity_cubo);
+
+        lado= findViewById(R.id.txtValorLadoCubo);
+        cubo= findViewById(R.id.lblVolumenCuboValor);
     }
-    public void calcularCuadrado(View v){
-       int l,ar;
+    public void calcularCubo(View v){
+        int l,ar;
         if(validar()) {
             l = Integer.parseInt(lado.getText().toString());
-            ar = l * l;
-            area.setText("" + ar);
+            ar = l * l * l;
+            cubo.setText("" + ar);
         }
     }
 
@@ -43,7 +44,7 @@ public class cuadrado extends AppCompatActivity {
     }
     public void onBackPressed(){
         //  finish();
-        Intent i= new Intent(cuadrado.this,Areas.class);
+        Intent i= new Intent(cubo.this,volumenes.class);
         startActivity(i);
     }
 }

@@ -8,23 +8,23 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class circulo extends AppCompatActivity {
+public class esfera extends AppCompatActivity {
     private EditText radio;
-    private TextView area;
-
+    private TextView volumen;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_circulo);
-        radio= findViewById(R.id.txtValorRadioCirculo);
-        area= findViewById(R.id.lblAreaValorCirculo);
+        setContentView(R.layout.activity_esfera);
+
+        radio= findViewById(R.id.txtValorRadioEsfera);
+        volumen= findViewById(R.id.lblVolumenValorEsfera);
     }
-    public void calcularCirculo(View v){
+    public void calcularEsfera(View v){
         int r,ar;
         if(validar1()) {
             r = Integer.parseInt(radio.getText().toString());
-            ar = (int) 3.14 * r * r;
-            area.setText("" + ar);
+            ar = ((int) 3.14 * r * r * r * 4)/3;
+            volumen.setText("" + ar);
         }
     }
 
@@ -43,7 +43,7 @@ public class circulo extends AppCompatActivity {
     }
     public void onBackPressed(){
         //  finish();
-        Intent i= new Intent(circulo.this,Areas.class);
+        Intent i= new Intent(esfera.this,volumenes.class);
         startActivity(i);
     }
 }

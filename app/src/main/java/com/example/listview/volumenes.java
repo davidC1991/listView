@@ -28,7 +28,30 @@ public class volumenes extends AppCompatActivity {
         lvVolumen.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                tituloVolumen.setText("la opcion escogida es" + lvVolumen.getItemAtPosition(position));
+                if(lvVolumen.getItemAtPosition(position).equals("ESFERA")){
+                    Intent intent;
+                    intent= new Intent(volumenes.this, esfera.class);
+                    startActivity(intent);
+                    finish();
+                }
+                if(lvVolumen.getItemAtPosition(position).equals("CONO")){
+                    Intent intent;
+                    intent= new Intent(volumenes.this, cono.class);
+                    startActivity(intent);
+                    finish();
+                }
+                if(lvVolumen.getItemAtPosition(position).equals("CILINDRO")){
+                    Intent intent;
+                    intent= new Intent(volumenes.this, cilindro.class);
+                    startActivity(intent);
+                    finish();
+                }
+                if(lvVolumen.getItemAtPosition(position).equals("CUBO")){
+                    Intent intent;
+                    intent= new Intent(volumenes.this, cubo.class);
+                    startActivity(intent);
+                    finish();
+                }
 
             }
         });
