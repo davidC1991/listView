@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">listView</string>
+    <string name="area">Area:</string>
+    <string name="calcular">CALCULAR</string>
+    <string name="limpiar">LIMPIAR</string>
+    <string name="ok">OK</string>
+    <string name="resultado">RESULTADO</string>
+    <string name="tituloCilindro">CILINDRO</string>
+    <string name="tituloCirculo">CIRCULO</string>
+    <string name="tituloCono">CONO</string>
+    <string name="tituloCuadrado">CUADRADO</string>
+    <string name="tituloCubo">CUBO</string>
+    <string name="tituloEsfera">ESFERA</string>
+    <string name="tituloRectangulo">RECTANGULO</string>
+    <string name="tituloTriangulo">TRIANGULO</string>
+    <string name="tituloValorAltura">Valor altura:</string>
+    <string name="tituloValorAlturaRectangulo">Valor altura</string>
+    <string name="tituloValorBaseRectangulo">Valor base:</string>
+    <string name="tituloValorLado">Valor lado:</string>
+    <string name="tituloValorRadio">Valor radio:</string>
+    <string name="valor_radio_Cilindro">Valor radio</string>
+    <string name="volumenCilindro">Volumen:</string>
+    <string name="volumenCono">Volumen</string>
+    <string name="volumenEsfera">Volumen</string>
+    <string name="areas">AREAS</string>
+    <string name="areasTitulo">AREAS</string>
+    <string name="opciones">OPCIONES</string>
+    <string name="operacionesRealizadas">OPERACIONES REALIZADAS</string>
+</resources>

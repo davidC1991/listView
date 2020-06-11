@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:gravity="center_horizontal"
-            android:text="AREAS"
+            android:text="@string/areas"
             android:textSize="24sp" />
 
         <ListView
