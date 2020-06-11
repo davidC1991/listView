@@ -25,9 +25,10 @@
     <string name="opciones">OPCIONES</string>
     <string name="areas">AREAS</string>
     <string name="operacionesRealizadas">OPERACIONES REALIZADAS</string>
-    <string name="tituloVolumenes">VOLUMENES</string>
-    <string name="tituloAreas">AREAS</string>
+
+
     <string name="areasTitulo">AREAS</string>
-    <string name="tituloVolumenes">VOLUMENES</string>
-    <string name="tituloOperaciones">OPERACIONES REALIZADAS</string>
+    <string name="tituloVolumenes" translatable="false">VOLUMENES</string>
+
+
 </resources>

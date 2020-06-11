@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView titulo;
     private ListView listView;
 
-    private String opciones[]={getString(R.string.areasTitulo),getString(R.string.tituloVolumenes),getString(R.string.tituloOperaciones)};
+    private String opciones[]={"AREAS","VOLUMENES","OPERACIONES REALIZADAS"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 
-                if(listView.getItemAtPosition(position).equals(getString(R.string.tituloAreas))){
+                if(listView.getItemAtPosition(position).equals(getString(R.string.areasTitulo))){
                     Intent intent;
                     intent= new Intent(MainActivity.this, Areas.class);
                     startActivity(intent);
